@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+    <style>
+        img {
+            width: 80px;
+            margin-right: 40px;
+            border: 2px solid rgb(209, 214, 214);
+            border-radius: 10px;
+        }
+
+        .all {
+            width: 800px;
+            border: 1px solid black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        .card {
+            margin-top: 30px;
+        }
+
+        .all__center {}
+
+        .card__input--number {
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .b {
+            margin-left: 10px;
+        }
+        input{
+            padding: 5px 10px;
+            
+            border: 1 px solid rgba(237, 231, 231, 0.1);
+        }
+
+        /* copy google search  */
+        .button {
+            display: inline-block;
+            border-radius: 7px;
+            border: none;
+            background: #1875FF;
+            color: white;
+            font-family: inherit;
+            text-align: center;
+            font-size: 13px;
+            box-shadow: 0px 14px 56px -11px #1875FF;
+            width: 10em;
+            padding: 1em;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .button span:after {
+            content: ' your life ';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.7s;
+        }
+
+        .button:hover span {
+            padding-right: 3.55em;
+        }
+
+        .button:hover span:after {
+            opacity: 4;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="all_center">
+            <div class="card__img">
+                <h1>Select Card</h1>
+                <img src="https://github.com/phamtienduong/session2/blob/master/bai4/images/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?raw=true"
+                    alt="">
+                <img src="https://github.com/phamtienduong/session2/blob/master/bai4/images/t%E1%BA%A3i%20xu%E1%BB%91ng%20(2).png?raw=true"
+                    alt="">
+                <img src="https://github.com/phamtienduong/session2/blob/master/bai4/images/t%E1%BA%A3i%20xu%E1%BB%91ng%20(3).png?raw=true"
+                    alt="">
+                <img src="https://github.com/phamtienduong/session2/blob/master/bai4/images/t%E1%BA%A3i%20xu%E1%BB%91ng%20(4).png?raw=true"
+                    alt="">
+                <img src="https://github.com/phamtienduong/session2/blob/master/bai4/images/t%E1%BA%A3i%20xu%E1%BB%91ng.png?raw=true"
+                    alt="">
+
+            </div>
+            <hr style="opacity: 0.3;">
+            <div class="card">
+                <form action="">
+                    <div><label for="">Card Number:</label>
+                        <input type="text">
+                    </div>
+                    <div class="card__input--number">
+                        <div class="a">
+                            <label for="">Exproty date</label>
+                            <input type="text">
+                        </div>
+                        <div class="b">
+                            <label for="">CVV/CVC</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <button class="button" style="vertical-align:middle"><span>Save </span></button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
